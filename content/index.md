@@ -1,13 +1,12 @@
 ---
 Title: Home
-Description: This is our index page.
+Description: This is my index page.
 ---
 
-Home page
+Dennis design page.
 ==========================
+Welcome to the Design page index. My name is Dennis and this is my first design course. 
+Im 33 years old and is currently studying a two year online program on BTH and this is my Portfolio for the Design course.
+
 
 The source for this page is in `content/index.md`.
-
-This is a sample home page written in markdown with some frontmatter defined.
-
-The pages make up a Anax site for demonstration purpose, it is something to start from.

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
+    <link rel="icon" href="{{ theme_url }}/../shared/img/umbrella.jpg">
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
 
     {% if meta.description %}
@@ -21,7 +21,7 @@
     <!-- Insert font choice here -->
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End -->
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css?v=<?= time() ?" type="text/css" />
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
@@ -41,7 +41,7 @@
             {% endif %}
             <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
                 <a href="{{ "index"|link }}">
-                    <h1>{{ site_title }}</h1>
+                    <h5>{{ site_title }}</h5>
                     {{ pages["_meta"].meta.tagline|markdown }}
                 </a>
             </div>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="flash-region">
-              <img class="flash-img" src="{{ base_url }}/image/tree2.jpg?sc=banner1&a=40,0,0,0">
+              <img class="flash-img" src="{{ base_url }}/image/banner.png">
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@
                 {% endfor %}
             </div>
             <p>
-                En footer med lite text.
+                This is my footer, this footer is better than your footer. Look at it. Footer.
             </p>
         </div>
     </div>
