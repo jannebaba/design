@@ -4,5 +4,5 @@ Tagline: My portfolio.
 Social:
     - title: Link to my github repo.
       url: https://github.com/jannebaba/design
-      icon: github
+      icon: fab fa-github
 ---

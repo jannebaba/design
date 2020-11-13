@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,17 +8,16 @@
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
 
     {% if meta.description %}
-        <meta name="description" content="{{ meta.description|striptags }}" />
+    <meta name="description" content="{{ meta.description|striptags }}" />
     {% endif %}
     {% if meta.robots %}
-        <meta name="robots" content="{{ meta.robots }}" />
+    <meta name="robots" content="{{ meta.robots }}" />
     {% endif %}
 
     {% if current_page %}
-        <link rel="canonical" href="{{ current_page.url }}" />
+    <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
     <!-- Insert font choice here -->
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End -->
@@ -49,8 +49,15 @@
                 <div id="nav" role="navigation" tabindex="-1">
                     <ul>
                         {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                        <!-- <pre>{{ dump(page.meta)}}</pre> -->
                             <li{% if page.id == current_page.id %} class="active"{% endif %}>
-                                <a href="{{ page.url }}">{{ page.title }}</a>
+                                <a href="{{ page.url }}">
+                                  {% if page.meta.icon %}
+                                      <i class="{{ page.meta.icon }}"></i>
+                                  {% else %}
+                                      {{ page.title }}
+                                  {% endif %}
+                                </a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -71,14 +78,14 @@
             <div class="social">
                 <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
                 {% for social in pages["_meta"].meta.social %}
-                    <a href="{{ social.url }}" title="{{ social.title }}" role="button">
-                        <i class="fa fa-{{ social.icon }}" aria-hidden="true"></i>
-                        <span class="sr-only">{{ social.title }}</span>
-                    </a>
+                <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+                    <i class="{{ social.icon }}" aria-hidden="true"></i>
+                    <span class="sr-only">{{ social.title }}</span>
+                </a>
                 {% endfor %}
             </div>
             <p>
-                This is my footer, this footer is better than your footer. Look at it. Footer.
+                This is my footer, footer, footer, footer.
             </p>
         </div>
     </div>

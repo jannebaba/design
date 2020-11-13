@@ -1,0 +1,5 @@
+$base-color: #070707;
+$border-dark: rgba($base-color, 0.88) !default;
+$alert-box-size: 600px !default;
+$background-color-base: #ddd !default; //grey
+$lighter-background-color: lighten($background-color-base, 50%);
