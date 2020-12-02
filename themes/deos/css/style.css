@@ -3,6 +3,7 @@
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+@import '../normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 .fa,
 .fas,
@@ -6457,11 +6458,6 @@ template {
   display: none;
 }
 
-.auto {
-  margin: auto;
-  text-align: center;
-}
-
 .landingpage {
   display: grid;
   gap: 1em 1em;
@@ -6475,7 +6471,7 @@ template {
 
 .kmom-box {
   grid-column: span 1;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 1, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6514,7 +6510,7 @@ template {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 25px;
   padding: 45px;
-  border: 5px solid black;
+  border: 5px solid rgba(0, 1, 0, 0.3);
 }
 
 .kmom p {
@@ -6527,7 +6523,7 @@ template {
   display: inline-block;
   grid-column: 1/2;
   grid-row: 2/3;
-  border: 5px solid black;
+  border: 5px solid rgba(0, 1, 0, 0.3);
   padding: 45px;
   max-width: 250px;
 }
@@ -6560,6 +6556,13 @@ template {
     display: none;
   }
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em 1em;
+  padding: 1em;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -6571,6 +6574,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
+  color: #003124;
 }
 
 * {
@@ -6607,7 +6611,7 @@ h6 {
 /*** BASIC LAYOUT ***/
 body,
 html {
-  background-color: #ddd;
+  background-color: #a0bfd5;
   height: 100%;
 }
 
@@ -6645,7 +6649,7 @@ body {
 
 /*** BASIC LAYOUT: HEADER ***/
 .header {
-  background: #ddd;
+  background: #a0bfd5;
 }
 
 .logo,
@@ -6668,7 +6672,7 @@ body {
 }
 
 .logo * {
-  background-color: #ddd;
+  background-color: #a0bfd5;
   display: block;
   height: 100%;
 }

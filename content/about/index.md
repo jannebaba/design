@@ -19,7 +19,12 @@ The sass watch auto-compiler is a very useful tool i have used to save time. It 
 
 The mobile page looks alright except for the picture is a little bit compressed on my phone screen but i like the menu. Although i would like the buttons to line up horizontally instead of the way they look at the moment i'm writing this. I'll look into it if i have time.
 
+I dont know why i started writing this in english but im 25 rows in now im realizing the reports are in swedish, its kind of wierd..
+
+I have updated the report pages with css grid. 
+
 # Here are some examples of cool stuff you can do:
+(this is for me)
 ```
 <!DOCTYPE html>
 <html>

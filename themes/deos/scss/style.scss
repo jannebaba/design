@@ -1,12 +1,4 @@
-@import '../../shared/fontawesome/scss/fontawesome';
-$fa-font-path: '../../shared/fontawesome/webfonts';
-@import '../../shared/fontawesome/scss/brands';
-@import '../../shared/fontawesome/scss/solid';
-@import '../../shared/fontawesome/scss/regular';
-@import '../../shared/scss/base';
-@import 'report';
-@import 'kmoms';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import 'common';
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -19,6 +11,7 @@ h4,
 h5,
 h6 {
     font-family: 'Roboto', sans-serif;
+    color: $alternative-color;
 }
 
 * {

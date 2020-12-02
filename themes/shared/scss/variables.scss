@@ -1,5 +1,11 @@
 $base-color: #070707;
+$alternative-color: #003124;
 $border-dark: rgba($base-color, 0.88) !default;
 $alert-box-size: 600px !default;
-$background-color-base: #ddd !default; //grey
+$background-color-base: #a0bfd5 !default; //grey
 $lighter-background-color: lighten($background-color-base, 50%);
+$base-color-dark: #fff;
+$border-dark-dark: rgba($base-color-dark, 0.88) !default;
+$alert-box-size-dark: 600px !default;
+$background-color-base-dark: #013447 !default; //grey
+$lighter-background-color-dark: lighten($background-color-base, 50%);
