@@ -1,5 +1,5 @@
 ---
-Logo: image/umbrella.png
+Logo: assets/img/seaIcon.jpg
 Tagline: My portfolio.
 Social:
     - title: Link to my github repo.

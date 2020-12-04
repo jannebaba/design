@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="{{ theme_url }}/../shared/img/umbrella.jpg">
+    <link rel="icon" href="{{ theme_url }}/../../assets/img/seaIcon.jpg">
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
 
     {% if meta.description %}
@@ -69,7 +69,13 @@
         <div class="gallery">
             {% for image in meta.images %}
             <div>
-                <img src="{{ image.url }} alt=" {{ image.alt }}">
+                <a href="{{ base_url }}/image/gallery/{{ image.url }}">
+                    <picture>
+                        <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}">
+                        <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ image.url }}&w=667">
+                        <img src="{{ base_url }}/image/gallery/{{ image.url }}&w=375" alt="{{ image.alt }}">
+                    </picture>
+                </a>
             </div>
             {% endfor %}
         </div>
