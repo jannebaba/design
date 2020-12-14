@@ -14,6 +14,10 @@ h6 {
     color: $alternative-color;
 }
 
+img:not([alt]) {
+    outline: 4px red dashed !important;
+}
+
 * {
     box-sizing: border-box;
     border: 0 none;
